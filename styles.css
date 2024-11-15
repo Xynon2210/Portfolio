@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+
+header nav a {
+    
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('background.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff; 
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text h2 {
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+}
+
+.hero button {
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about,  #contact {
+    background-color: #111;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+#skills {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+
+.skill-card {
+    background-color: #919191;
+    color: #000000;
+    border-radius: 0px;
+    padding: 20px;
+    width: 280px; 
+    min-height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+.skill-card:hover {
+    transform: scale(1.05) rotate(-1deg); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    border-radius: 20px; 
+    background-color: #fff;
+}
+
+.skill-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.skill-card p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    font-size: 0.8em;
+    color: #888;
+}
+
+.contact-info p, .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.social-links a:hover {
+    color: #00cc66;
+}
+
+.download-resume {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: #695f5f;
+    color: #0b0d0e;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.download-resume:hover {
+    background-color: #d4edf7;
+}
